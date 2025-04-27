@@ -10,8 +10,7 @@ def main():
     while True:
 
         ret, frame = cap.read()  # Читання кадру відео
-
-        gray_frame = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)             # Переведення зображення у GRAY-простір
+        
         cv2.imshow('OriginalFrame', frame)  # Вивід кадру відео на монітор
         laplacian = cv2.Laplacian(
             frame, # Оригінальне зображення
